@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react"
 import useWindowSize from "../hooks/useWindowSize";
 // components
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import Intro from "../components/intro";
 import Slider from "../components/slider";
 import StoriesMesh from "../components/stories";
@@ -22,7 +21,6 @@ const IndexPage = () => {
   return loading ? <div /> : (
     size.width >= 1366 ? (
       <Layout>
-        <Seo title="Home" />
         <Intro />
         <Slider />
         <StoriesMesh />
