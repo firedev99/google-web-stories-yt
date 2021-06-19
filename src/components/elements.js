@@ -6,7 +6,7 @@ export const VideoElement = ({ src, poster }) => {
     const [ref, isVisible] = useView({
         root: null,
         margin: "0px",
-        threshold: 0.4,
+        threshold: 0.5,
     });
 
     useEffect(() => {

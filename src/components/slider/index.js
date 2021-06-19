@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { meshData } from '../data';
 // components
 import FeatureSlider from './featureSlider';
+// styled-components
 import { Wrapper, LeftPart, RightPart, Inner } from "./styles/sliderStyles";
 
 function vw(value) {
@@ -26,7 +27,7 @@ export default function Slider() {
                 scrollTrigger: {
                     trigger: slidesRef.current,
                     start: "50% 50%",
-                    end: () => wrapperRef.current && `+=${wrapperRef.current.offsetHeight - vw(40)}`,
+                    end: () => wrapperRef.current && `+=${wrapperRef.current.offsetHeight - vw(41)}`,
                     pin: true,
                     scrub: true,
                 }

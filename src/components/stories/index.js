@@ -4,14 +4,15 @@ import gsap from "gsap";
 import useView from '../../hooks/useView';
 // components 
 import StoriesIntro from './storiesIntro';
-import { Wrapper } from "./styles/storiesStyles";
 import FloatingElements from './floatingElements';
+// styled-components
+import { Wrapper } from "./styles/storiesStyles";
 
 export default function StoriesMesh() {
     const [ref, isVisible] = useView({
         root: null,
         margin: "0px",
-        threshold: 0,
+        threshold: 0.1,
     })
     useEffect(() => {
         const tl = gsap.timeline({

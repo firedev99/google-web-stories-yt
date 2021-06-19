@@ -3,8 +3,7 @@ import styled from "styled-components/macro";
 export const Wrapper = styled.div`
     max-width: 660px;
     padding: 324px 0;
-    margin-left: 8vw;
-    font-family: "Noto Sans JP", sans-serif;
+    margin-left: 7.2rem;
     h3 {
         font-size: 56px;
         letter-spacing: 0.2px;
@@ -13,6 +12,7 @@ export const Wrapper = styled.div`
         line-height: 68px;
     }
     p {
+        font-weight: 400;
         font-size: 20px;
         max-width: 520px;
     }

@@ -8,10 +8,9 @@ export const Wrapper = styled.div`
     text-align: center;
     font-size: 32px;
     h1 {
-        font-weight: 600;
+        font-weight: 700;
         display: inline-block;
-        font-family: 'Noto Sans JP', sans-serif;
-        line-height: 1.1em;
+        line-height: 1.05em;
         color: rgba(32, 33, 36, 0.94);
         letter-spacing: -1px;
     }

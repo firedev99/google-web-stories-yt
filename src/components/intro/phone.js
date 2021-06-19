@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { videos } from "../data";
+import frame from "../../assests/frame.png";
 // hooks
 import useView from "../../hooks/useView";
 // styled-components
 import { Wrapper, Frame } from "./styles/phoneStyles.js";
-import frame from "../../assests/frame.png";
-import { videos } from "../data";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function PhoneBlock() {
     const mainVideo = videos[1];
@@ -50,7 +50,7 @@ export default function PhoneBlock() {
             tl.to(".intro_wrapper", {
                 backgroundColor: "rgba(32, 33, 36, 1)",
                 duration: 0.3,
-            }, "-=0.3")
+            }, "-=0.2")
             return tl;
         }
         const master = gsap.timeline();

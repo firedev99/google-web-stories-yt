@@ -10,14 +10,17 @@ const Wrapper = styled.div`
     justify-content: center;
     padding: 0 8rem;
     height: 80vh;
-    font-family: "Noto Sans JP", sans-serif;
     transition: all 0.4s;
     .intro {
         color: rgba(0, 0, 0, 1);
         margin: 64px 0;
-        max-width: 364px;
-        font-size: 2.32vw;
+        max-width: 356px;
+        font-size: 35px;
         line-height: 1.12em;
+        font-weight: 400;
+    }
+    p {
+        font-weight: 400;
     }
     h3 {
         position: relative;
@@ -55,4 +58,4 @@ export default function FeatureSlider({ title, description, index, setActiveInde
             <p>{description}</p>
         </Wrapper>
     )
-}
+};

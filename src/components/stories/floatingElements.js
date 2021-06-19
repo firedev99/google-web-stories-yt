@@ -2,6 +2,7 @@ import React from 'react'
 import { floatingData } from '../data';
 // components
 import FloatingBox from './floatingBox';
+// styled-components
 import { Wrapper } from './styles/flotingStyles';
 
 export default function FloatingElements() {

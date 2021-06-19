@@ -6,16 +6,17 @@ import Layout from "../components/layout"
 import Intro from "../components/intro";
 import Slider from "../components/slider";
 import StoriesMesh from "../components/stories";
+import Requirement from "../components/requirements";
 
 const IndexPage = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const size = useWindowSize();
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000)
+    }, 1000)
   }, [])
 
   return loading ? <div /> : (
@@ -26,7 +27,9 @@ const IndexPage = () => {
         <StoriesMesh />
       </Layout>
     ) : (
-      <h3>{size.width}</h3>
+      <Layout>
+        <Requirement />
+      </Layout>
     )
   )
 }

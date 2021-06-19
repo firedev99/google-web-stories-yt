@@ -7,7 +7,7 @@ const splitText = keyframes`
     100%{
         bottom: 0;
     }
-`
+`;
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -20,9 +20,8 @@ export const Wrapper = styled.div`
         h1 {
             overflow: hidden;
             color: rgb(32, 33, 36, 1);
-            font-family: 'Noto Sans JP', san-serifs;
             .stories {
-                font-weight: 600;
+                font-weight: 700;
                 &:nth-child(7) {
                     margin-right: 12px;
                 }

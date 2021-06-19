@@ -14,13 +14,14 @@ export const Wrapper = styled.div`
         justify-content: space-around;
     }
 `;
+
 export const BriefWrapper = styled.div`
     width: 392px;
     font-size: 20px;
     padding-left: 52px;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
 `;
+
 export const Logos = styled.div`
     display: flex;
     flex-direction: column;
@@ -28,10 +29,10 @@ export const Logos = styled.div`
         font-size: 16px;
         margin-left: 10px;
         margin-bottom: 14px;
-        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
     }
 `;
+
 export const Display = styled.div`
     display: grid;
     column-gap: 24px;

@@ -35,7 +35,6 @@ export const Container = styled.div`
             position: initial !important;
             top: 0 !important;
         } */
-
     }
 `;
 

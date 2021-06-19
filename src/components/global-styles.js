@@ -10,13 +10,12 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
-        /* background-color: rgba(255, 255, 255, 1); */
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 300;
     }
 `;
 
 export const Wrapper = styled.div`
-    /* margin: 0 auto;
-    width: 1536px; */
     max-width: 1536px;
     margin: 0 auto;
     padding: 0 16px;

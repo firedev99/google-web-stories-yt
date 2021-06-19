@@ -1,6 +1,7 @@
 import React from 'react';
-import { Wrapper, BriefWrapper, Logos, Display } from "./styles/clientStyles";
 import { logos } from "../data";
+// styled-components
+import { Wrapper, BriefWrapper, Logos, Display } from "./styles/clientStyles";
 
 export default function ClientUsage() {
     return (

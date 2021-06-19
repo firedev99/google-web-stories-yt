@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { gsap } from "gsap";
-import { Wrapper, LeftSection, RightSection } from "./styles/collageStyles";
 import { photos, videos } from "../data";
+// props
 import { ImageElement, VideoElement } from "../elements";
+// styled-components
+import { Wrapper, LeftSection, RightSection } from "./styles/collageStyles";
 
 export default function IntroCollage() {
     const leftImages = photos.slice(0, 2);

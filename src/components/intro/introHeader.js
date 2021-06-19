@@ -1,4 +1,5 @@
 import React from 'react';
+// styled-components
 import { Wrapper } from "./styles/headerStyles.js";
 
 export default function IntroHeader() {
