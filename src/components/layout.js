@@ -7,7 +7,6 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     document.body.className = "intro_wrapper";
-
     return () => document.body.removeAttribute("intro_wrapper");
   }, [])
 

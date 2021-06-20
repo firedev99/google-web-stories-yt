@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import styled from "styled-components/macro";
 // hooks
 import useWindowSize from '../hooks/useWindowSize';
@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     .yt {
         margin: 8px;
         font-weight: 700;
@@ -18,6 +19,14 @@ const Wrapper = styled.div`
 
 export default function Requirement() {
     const size = useWindowSize();
+    useLayoutEffect(() => {
+        // Get original body overflow
+        const originalStyle = window.getComputedStyle(document.body).overflow;
+        // Prevent Scrolling on mount
+        document.body.style.overflow = "hidden";
+        // Re-enable scrolling when component unmounts
+        return () => (document.body.style.overflow = originalStyle);
+    }, []);
 
     return (
         <Wrapper>
